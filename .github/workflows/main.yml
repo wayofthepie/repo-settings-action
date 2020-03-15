@@ -2,11 +2,10 @@
 
 name: CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request 
+# Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
-on:
-  push
-  
+on: push
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -16,6 +15,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@master
-    - uses: wayofthepie/repo-settings-action@master
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@master
+      - uses: wayofthepie/repo-settings-action@test-actions2
