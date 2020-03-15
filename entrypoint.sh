@@ -3,3 +3,5 @@
 echo "${@}"
 
 env
+
+cat ${GITHUB_EVENT_PATH}
